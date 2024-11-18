@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Onest Variable', sans-serif;
+}
+
+body {
+
+    height: 98vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+section {
+    width: 75vw;
+    height: 75vh;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    display: flex;
+    justify-content: center;
+}
+
+.todo-container h1{
+    margin: 40px;
+}
+
+.todo-container .todoinput {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-container .todoinput input{
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.todo-container .todoinput #addTodoButton {
+    width: 20%;
+    background-color:lightgrey;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    transition: box-shadow 0.3s ease; /* Transición suave */
+  }
+  
+.todo-container .todoinput #addTodoButton:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra más pequeña al presionar */
+}
+
+#todoList {
+    margin-top: 10px;
+}
+
+#todoList .todo-item{
+    text-align: left;
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#todoList .todo-item .todo-text {
+    width: 60%;
+}
+
+#todoList .todo-item .todo-buttons {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;    
+}
+
+#todoList .todo-item .todo-buttons .verde{
+    background-color: lightgreen;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    transition: box-shadow 0.3s ease; /* Transición suave */
+}
+
+#todoList .todo-item .todo-buttons .rojo{
+    background-color: lightcoral;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0    , 0, 0.2); /* Sombra más intensa */
+    transition: box-shadow 0.3s ease; /* Transición suave */
+}
+
+#todoList .todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: gray;
+}
